@@ -57,21 +57,23 @@ body{
 .ask-search{
     margin: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 35px;
     height: 30px;
     
 }
 
 .form-control{
-    width: 10pc;
+    width: 13pc;
     border-radius: 15px;
+    font-size: large;
 }
 
 .btn-dark{
-    
+    font-size: larger;
     border-radius: 15px;
 }
+
 
 .game-boy-body{
     margin: auto;
@@ -81,6 +83,7 @@ body{
     border-radius: 5%;
     display: flex;
     justify-content: center;
+    box-shadow: 0 0 30px;
 }
 
 .game-boy-screen{
@@ -89,5 +92,66 @@ body{
     height: 300px;
     background-color: lightgrey;
     padding: 1pc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
 }
 
+.container-button{
+    display: grid;
+    grid-template-columns: 15% 13% 15% 15% 15% 10%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    width: 300px;
+    height: 142px;
+}
+
+.btn-A{
+    display: grid;
+    grid-column-start: 7;
+    grid-row-start: 2;
+    font-size: larger;
+    border-radius: 20px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-b{
+    grid-column-start: 6;
+    grid-row-start: 3;
+    width: 35px;
+    height: 36px;
+    border-radius: 20px;
+    font-size: large;
+    
+}
+
+.btn-left{
+    grid-row-start: 3;
+    border-radius: 0 57% 50% 0;
+    width: 36px;
+}
+
+.btn-up{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    width: 33px;
+    border-radius: 0px 0px 30px 25px;
+    height: 36px;
+}
+
+.btn-right{
+    grid-column-start: 3;
+    grid-row-start: 3;
+    width: 38px;
+    border-radius: 40px 0 0 30px;
+}
+
+.btn-down{
+    grid-column-start: 2;
+    grid-row-start: 4;
+    width: 33px;
+    border-radius: 40px 40px 0 0;
+    height: 34px;
+}

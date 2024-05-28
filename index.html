@@ -8,23 +8,33 @@
 </head>
 <body>
    <div class="text-center">
-       <hi class="magic-name">Magic 8-Ball</hi>
-    <div class="game-boy-body">
+       <h1 class="magic-name">Magic 8-Ball</h1>
+       <div class="game-boy-body">
         <div class="game-boy-screen">
             <div class="ball-search">
                 <div class="ball">
                     <div class="white-surface">
-                        <p class="ball-text">8</p>
+                        <p class="ball-text" id="magic">8</p>
                     </div>
                 </div>
                 
                 <div class="ask-search">
                     <input type="text" class="form-control" placeholder="Ask Question..." id="Question">
-                    <button class="btn-dark" type="submit" id="submit-btn">Ask</button>
+                    <button class="btn-dark" onclick="myFunction()" type="submit" id="submit-btn">Ask</button>
                 </div>
+            </div>
+            
+            <div class="container-button">
+                <button class="btn-A">A</button>
+                <button class="btn-b">B</button>
+                <button class="btn-left"></button>
+                <button class="btn-up"></button>
+                <button class="btn-right"></button>
+                <button class="btn-down"></button>
             </div>
         </div>
     </div>
    </div>
+   <script src="script.js"></script>
 </body>
 </html>
